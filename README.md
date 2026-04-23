@@ -49,13 +49,5 @@
 - Exploring **distributed systems & system design**
 - Developing **trading-related backend tools**
 
----
 
-## 📫 Contact Me
-- 📧 Email: cigivet987@httpsu.com  
-- 💼 LinkedIn: (add your link here)
 
----
-
-## ⚡ Fun Fact
-I combine **backend engineering + trading logic** to build practical, real-world systems.
