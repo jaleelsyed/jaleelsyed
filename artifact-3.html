@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artifact 3 | Jaleel Syed</title>
+<meta name="description" content="Professional portfolio of Jaleel Syed, senior software engineer moving into AI and machine learning.">
+<style>
+  :root{--ink:#111;--muted:#555;--line:#ddd;--soft:#f5f5f5;--accent:#1f4e79;--bg:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--line);padding:56px 0 36px}
+  header h1{font-size:2.6rem;line-height:1.1;margin:0 0 8px;letter-spacing:-.5px}
+  header p.role{margin:0;color:var(--muted);font:500 1.05rem/1.4 Helvetica,Arial,sans-serif}
+  nav{margin-top:20px;font:500 .95rem Helvetica,Arial,sans-serif}
+  nav a{color:var(--accent);text-decoration:none;margin-right:18px}
+  nav a:hover{text-decoration:underline}
+  section{padding:40px 0;border-bottom:1px solid var(--line)}
+  h2{font:700 .8rem Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+  h3{font-size:1.7rem;line-height:1.2;margin:0 0 6px}
+  h4{font:700 1rem Helvetica,Arial,sans-serif;margin:28px 0 6px}
+  p{margin:0 0 14px}
+  .vp{font-size:1.3rem;line-height:1.5;border-left:3px solid var(--ink);padding-left:18px;margin:0}
+  .meta{color:var(--muted);font:.9rem Helvetica,Arial,sans-serif;margin-bottom:20px}
+  .slides{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  .slides img{width:100%;border:1px solid var(--line);display:block}
+  .dl a{display:inline-block;margin:6px 10px 6px 0;padding:9px 16px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font:600 .9rem Helvetica,Arial,sans-serif}
+  .dl a:hover{background:var(--ink);color:#fff}
+  ul{padding-left:22px;margin:0 0 14px}
+  .toc a{color:var(--accent)}
+  table.t{width:100%;border-collapse:collapse;font:.92rem/1.45 Helvetica,Arial,sans-serif;margin:10px 0 18px}
+  table.t th,table.t td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.t th{border-bottom:2px solid var(--ink)}
+  .skills{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font:.95rem/1.5 Helvetica,Arial,sans-serif}
+  .shot{margin:14px 0}
+  .shot img{width:100%;border:1px solid var(--line);display:block}
+  .shot figcaption{font:italic .85rem Helvetica,Arial,sans-serif;color:var(--muted);margin-top:6px}
+  .refs p,table.t td{overflow-wrap:anywhere}
+  .refs p{padding-left:36px;text-indent:-36px;font-size:.95rem}
+  footer{padding:30px 0 50px;color:var(--muted);font:.85rem Helvetica,Arial,sans-serif}
+  @media (max-width:600px){.skills{grid-template-columns:1fr}table.t{font-size:.85rem}header h1{font-size:2rem}.slides{grid-template-columns:1fr}.vp{font-size:1.1rem}}
+  .cards{display:grid;gap:14px}
+  .card{display:block;border:1px solid var(--line);padding:18px 20px;text-decoration:none;color:var(--ink)}
+  .card:hover{border-color:var(--ink)}
+  .card .n{font:700 .75rem Helvetica,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .card h3{font-size:1.25rem;margin:6px 0}
+  .card p{margin:0;color:var(--muted);font:.95rem/1.5 Helvetica,Arial,sans-serif}
+  nav a.on{color:var(--ink);font-weight:700}
+  .pager{display:flex;justify-content:space-between;gap:12px;padding:30px 0;font:600 .95rem Helvetica,Arial,sans-serif}
+  .pager a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Jaleel Syed</h1>
+  <p class="role">Senior Software Engineer &middot; M.S. Artificial Intelligence student, Indiana Wesleyan University</p>
+  <nav><a href="index.html">Home</a><a href="index.html#artifacts">Artifacts</a><a href="artifact-1.html">Artifact 1</a><a href="artifact-2.html">Artifact 2</a><a href="artifact-3.html" class="on">Artifact 3</a></nav>
+</header>
+<section>
+<article id="artifact-3">
+    <h3>Artifact 3: Machine Learning or Deep Learning? Choosing the Right Approach</h3>
+    <div class="meta">AIML-500 Fundamentals of AI and ML &middot; Workshop 2 &middot; October 2026</div>
+
+    <h4>Introduction</h4>
+    <p>A lot of teams hear "AI" and jump straight to the biggest model they can find. In this class I wrote a report comparing machine learning and deep learning using two real examples, and it changed how I think about that choice. I'm sharing it here as a quick guide for engineers and product people deciding which approach fits their problem.</p>
+
+    <h4>Description</h4>
+    <p>The report looks at two real systems. The first is email spam filtering with Apache SpamAssassin's Bayesian classifier, a classic machine learning problem where people choose the features. The second is screening eye photos for diabetic retinopathy with a convolutional neural network, where the model has to learn the features from raw pixels. For each one I explain why the approach fits and why the other one doesn't.</p>
+
+    <table class="t">
+      <tr><th></th><th>Spam filtering (ML)</th><th>Eye photo screening (DL)</th></tr>
+      <tr><td><strong>Type of data</strong></td><td>Text with clear clues</td><td>Raw images</td></tr>
+      <tr><td><strong>Who picks the features</strong></td><td>People</td><td>The network learns them</td></tr>
+      <tr><td><strong>Training data needed</strong></td><td>Hundreds to thousands of emails</td><td>Over 100,000 labeled images</td></tr>
+      <tr><td><strong>Computing power</strong></td><td>A normal server</td><td>GPUs for training</td></tr>
+      <tr><td><strong>Explaining a decision</strong></td><td>Easy</td><td>Hard</td></tr>
+    </table>
+
+    <p><strong>Quick way to decide:</strong> if you could write the warning signs on a checklist, start with machine learning. If nobody could write that checklist, like the signs of disease in an eye photo, deep learning is worth the extra data and cost.</p>
+    <p class="dl"><a href="ML-vs-DL-Report-Jaleel-Syed.pdf">Read the full report (PDF)</a></p>
+
+    <h4>Objective</h4>
+    <p>I wanted to understand the real difference between the two approaches, not just the definitions, and be able to defend a choice for a specific problem. Healthcare is where I build software, so I picked an example where the wrong choice could actually hurt someone.</p>
+
+    <h4>Process</h4>
+    <ul>
+      <li>Picked one machine learning example and one deep learning example from the course lesson.</li>
+      <li>Found a real-world system for each and checked the facts against the original sources, including the FDA authorization and trial results for IDx-DR.</li>
+      <li>Wrote out why each approach fits its problem and why the other one doesn't, then compared them on data, features, compute, and explainability.</li>
+      <li>Revised the report twice so it reads in plain language instead of like a textbook.</li>
+      <li>For this portfolio, I pulled out the comparison table and a one-line rule of thumb so someone can get the main point without reading the whole report.</li>
+    </ul>
+
+    <h4>Tools and Technologies Used</h4>
+    <ul>
+      <li>Microsoft Word for the report</li>
+      <li>Claude (Anthropic) to help research the sources and draft and revise the report</li>
+      <li>Official documentation, peer-reviewed papers, and FDA-related sources for fact-checking</li>
+    </ul>
+
+    <h4>Value Proposition</h4>
+    <p><strong>Unique value:</strong> It turns a textbook comparison into a practical decision guide, backed by two real systems instead of made-up examples.</p>
+    <p><strong>Relevance:</strong> Picking deep learning when a simpler model would do costs time, money, and explainability, which matters a lot in healthcare. This artifact shows I start from the problem and choose the approach that fits, which is the core of how I want to build AI.</p>
+
+    <h4>References</h4>
+    <div class="refs">
+      <p>Abr&agrave;moff, M. D., Lavin, P. T., Birch, M., Shah, N., &amp; Folk, J. C. (2018). Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices. <em>npj Digital Medicine, 1</em>, Article 39. https://doi.org/10.1038/s41746-018-0040-6</p>
+      <p>Apache SpamAssassin Project. (n.d.). <em>Mail::SpamAssassin::Plugin::Bayes</em>. https://spamassassin.apache.org/full/4.0.x/doc/Mail_SpamAssassin_Plugin_Bayes.html</p>
+      <p>Gulshan, V., Peng, L., Coram, M., Stumpe, M. C., Wu, D., Narayanaswamy, A., ... Webster, D. R. (2016). Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs. <em>JAMA, 316</em>(22), 2402&ndash;2410. https://doi.org/10.1001/jama.2016.17216</p>
+      <p>Kumaran, N. (2019, February 7). <em>Ridding Gmail of 100 million more spam messages with TensorFlow</em>. Google Workspace Blog.</p>
+    </div>
+  </article>
+</section>
+<div class="pager"><a href="artifact-2.html">&larr; Artifact 2</a><a href="index.html#artifacts">All artifacts &rarr;</a></div>
+<footer>&copy; 2026 Jaleel Syed &middot; Built for AIML-500 at Indiana Wesleyan University</footer>
+</div>
+</body>
+</html>
