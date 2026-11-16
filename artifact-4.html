@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artifact 4 | Jaleel Syed</title>
+<meta name="description" content="Professional portfolio of Jaleel Syed, senior software engineer moving into AI and machine learning.">
+<style>
+  :root{--ink:#111;--muted:#555;--line:#ddd;--soft:#f5f5f5;--accent:#1f4e79;--bg:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--line);padding:56px 0 36px}
+  header h1{font-size:2.6rem;line-height:1.1;margin:0 0 8px;letter-spacing:-.5px}
+  header p.role{margin:0;color:var(--muted);font:500 1.05rem/1.4 Helvetica,Arial,sans-serif}
+  nav{margin-top:20px;font:500 .95rem Helvetica,Arial,sans-serif}
+  nav a{color:var(--accent);text-decoration:none;margin-right:18px}
+  nav a:hover{text-decoration:underline}
+  section{padding:40px 0;border-bottom:1px solid var(--line)}
+  h2{font:700 .8rem Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+  h3{font-size:1.7rem;line-height:1.2;margin:0 0 6px}
+  h4{font:700 1rem Helvetica,Arial,sans-serif;margin:28px 0 6px}
+  p{margin:0 0 14px}
+  .vp{font-size:1.3rem;line-height:1.5;border-left:3px solid var(--ink);padding-left:18px;margin:0}
+  .meta{color:var(--muted);font:.9rem Helvetica,Arial,sans-serif;margin-bottom:20px}
+  .slides{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  .slides img{width:100%;border:1px solid var(--line);display:block}
+  .dl a{display:inline-block;margin:6px 10px 6px 0;padding:9px 16px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font:600 .9rem Helvetica,Arial,sans-serif}
+  .dl a:hover{background:var(--ink);color:#fff}
+  ul{padding-left:22px;margin:0 0 14px}
+  .toc a{color:var(--accent)}
+  table.t{width:100%;border-collapse:collapse;font:.92rem/1.45 Helvetica,Arial,sans-serif;margin:10px 0 18px}
+  table.t th,table.t td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.t th{border-bottom:2px solid var(--ink)}
+  .skills{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font:.95rem/1.5 Helvetica,Arial,sans-serif}
+  .shot{margin:14px 0}
+  .shot img{width:100%;border:1px solid var(--line);display:block}
+  .shot figcaption{font:italic .85rem Helvetica,Arial,sans-serif;color:var(--muted);margin-top:6px}
+  .refs p,table.t td{overflow-wrap:anywhere}
+  .refs p{padding-left:36px;text-indent:-36px;font-size:.95rem}
+  footer{padding:30px 0 50px;color:var(--muted);font:.85rem Helvetica,Arial,sans-serif}
+  @media (max-width:600px){.skills{grid-template-columns:1fr}table.t{font-size:.85rem}header h1{font-size:2rem}.slides{grid-template-columns:1fr}.vp{font-size:1.1rem}}
+  .cards{display:grid;gap:14px}
+  .card{display:block;border:1px solid var(--line);padding:18px 20px;text-decoration:none;color:var(--ink)}
+  .card:hover{border-color:var(--ink)}
+  .card .n{font:700 .75rem Helvetica,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .card h3{font-size:1.25rem;margin:6px 0}
+  .card p{margin:0;color:var(--muted);font:.95rem/1.5 Helvetica,Arial,sans-serif}
+  nav a.on{color:var(--ink);font-weight:700}
+  .pager{display:flex;justify-content:space-between;gap:12px;padding:30px 0;font:600 .95rem Helvetica,Arial,sans-serif}
+  .pager a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Jaleel Syed</h1>
+  <p class="role">Senior Software Engineer &middot; M.S. Artificial Intelligence student, Indiana Wesleyan University</p>
+  <nav><a href="index.html">Home</a><a href="index.html#artifacts">Artifacts</a><a href="artifact-1.html">Artifact 1</a><a href="artifact-2.html">Artifact 2</a><a href="artifact-3.html">Artifact 3</a><a href="artifact-4.html" class="on">Artifact 4</a></nav>
+</header>
+<section>
+<article id="artifact-4">
+    <h3>Artifact 4: ML Data Readiness Checklist</h3>
+    <div class="meta">AIML-500 Fundamentals of AI and ML &middot; Workshop 4 &middot; November 2026</div>
+
+    <h4>Introduction</h4>
+    <p>In Workshop 4 I worked through three data challenges with an AI coach: cleaning a messy review dataset, scaling a r&eacute;sum&eacute;-screening model to a new country, and two hospitals sharing patient data. The same lesson kept coming up. Most machine learning problems start in the data, not the model. I turned my answers into a two-page checklist that a team can actually use.</p>
+
+    <h4>Description</h4>
+    <p>Page 1 is the checklist itself, with four sections and an "evidence to look for" column so a box only gets ticked when there's proof. Page 2 shows the four checkpoints as a flow, three worked examples from the scenarios, red flags that mean "stop and check," and a sign-off box.</p>
+    <table class="t">
+      <tr><th>Section</th><th>What it checks</th></tr>
+      <tr><td><strong>1. Before you change anything</strong></td><td>Raw copy kept, data profiled, rules for "unusable" written down</td></tr>
+      <tr><td><strong>2. Cleaning and labels</strong></td><td>Duplicates removed before splitting, labels checked, no groups dropped by accident</td></tr>
+      <tr><td><strong>3. Bias and scaling</strong></td><td>What the label really measures, proxies, error rates by group, local pilot, appeals</td></tr>
+      <tr><td><strong>4. Sharing sensitive data</strong></td><td>Federated learning and its limits, governance agreement, validation at each site</td></tr>
+    </table>
+    <p class="dl"><a href="ML-Data-Readiness-Checklist-Jaleel-Syed.pdf">Download the checklist (PDF)</a></p>
+
+    <h4>Objective</h4>
+    <p>I wanted to show that I can spot data risks before they become model problems, and turn that into something practical. A checklist is easier to follow during a busy project than a long write-up, especially for teams building healthcare tools, where a missed case affects a real patient.</p>
+
+    <h4>Process</h4>
+    <ul>
+      <li>Worked through the three scenarios with the AI coach, giving a decision and a reason for each and answering follow-up questions.</li>
+      <li>Pulled out the checks that came up in my answers and the coach's feedback, such as removing duplicates before splitting, looking for proxy variables, and validating at each hospital separately.</li>
+      <li>Grouped them by stage, from first look at the data to sharing it with a partner.</li>
+      <li>Cut each item down to one line and added a short "why" under each section so the reason is clear.</li>
+      <li>Added an evidence column, the checkpoint flow, worked examples, red flags, and a sign-off box so it works as a real project tool, kept in the same black-and-white style as the rest of my portfolio.</li>
+    </ul>
+
+    <h4>Tools and Technologies Used</h4>
+    <ul>
+      <li>The course's AI coaching prompt, run in Claude (Anthropic)</li>
+      <li>Claude to help organize the checklist and lay out the PDF</li>
+      <li>HTML and CSS for the design, exported to PDF</li>
+    </ul>
+
+    <h4>Value Proposition</h4>
+    <p><strong>Unique value:</strong> It turns three realistic data problems into two pages of checks that a team can tick off before training, scaling, or sharing a model.</p>
+    <p><strong>Relevance:</strong> In healthcare software, a model that looks accurate overall can still fail one hospital or one group of patients. This checklist shows I think about data quality, fairness, and privacy as part of building the system, not as an afterthought.</p>
+
+    <h4>References</h4>
+    <div class="refs">
+      <p>Indiana Wesleyan University. (2026). <em>Data challenge scenarios</em> [Course activity]. AIML-500, Brightspace.</p>
+    </div>
+  </article>
+</section>
+<div class="pager"><a href="artifact-3.html">&larr; Artifact 3</a><a href="index.html#artifacts">All artifacts &rarr;</a></div>
+<footer>&copy; 2026 Jaleel Syed &middot; Built for AIML-500 at Indiana Wesleyan University</footer>
+</div>
+</body>
+</html>
